@@ -1,21 +1,18 @@
-import NavBar from "./components/NavBar"
-import Hero from "./components/Hero"
-
-
+import NavBar from "./components/NavBar";
+import Hero from "./components/Hero";
+import About from "./components/About";
 
 const App = () => {
   return (
-    <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-white selection:text-black">
-      <div className="flixed top-0 -z-10 h-full w-full"></div>
-      <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+    <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-white selection:text-black relative min-h-screen">
+      <div className="fixed inset-0 -z-10 h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
       <div className="container mx-auto px-8">
-      <NavBar />
-      <Hero/>
-      
-        
+        <NavBar />
+        <Hero />
+        <About />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
